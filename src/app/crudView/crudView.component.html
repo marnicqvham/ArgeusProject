@@ -1,0 +1,27 @@
+
+<input type="text" (input)="id = $event.target.value;" /> <br>
+<button (click)='getId()' >getId</button>
+
+
+<div *ngFor="let person of persons">
+
+
+  <strong>Id</strong>: {{ person.id | json }}<br />
+  <strong>name </strong>: {{ person.name | json }}<br />
+  <strong>lastName </strong>: {{ person.lastName | json }}<br />
+  <strong>minor </strong>: {{ person.minor | json }}<br />
+  <strong>resident </strong>: {{ person.resident | json }}<br />
+  <strong>email </strong>: {{ person.email | json }}<br />
+  <strong>nationalNumber </strong>: {{ person.nationalNumber | json }}<br />
+  <strong>Adress: </strong><br />
+  <strong>id </strong>: {{ person.address.id | json }}<br />
+  <strong>street </strong>: {{ person.address.street | json }}<br />
+  <strong>postcode </strong>: {{ person.address.postcode | json }}<br />
+  <strong>city </strong>: {{ person.address.city | json }}<br />
+  <strong>country </strong>: {{ person.address.country | json }}<br />
+  <strong>birthPlace </strong>: {{ person.birthPlace | json }}<br />
+  <strong>dateOfBirth </strong>: {{ person.dateOfBirth | json }}<br />
+  <strong>maritalStatus </strong>: {{ person.maritalStatus | json }}<br />
+  <strong>partnerName </strong>: {{ person.partnerName | json }}<br />
+--------------------------------------------------------------------------
+  </div>
